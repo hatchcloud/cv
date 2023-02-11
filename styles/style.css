@@ -6,6 +6,7 @@
     --color-text-primary: #FFF;
     --color-text-secondary: #C4C4C4;
     --color-gray: #0F0E0E;
+    --color-dark-gray: #080808;
     --scale: 3; 
     --animate-duration: 1500ms;
     
@@ -206,7 +207,7 @@ body{
     line-height: 27px;
     color: var(--color-text-secondary);
     padding-bottom: 80px;
-    max-width: 600px;
+    max-width: 750px;
 }
 
 .sub-title{
@@ -305,5 +306,66 @@ body{
     width: 100%;
 }
 
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--color-dark-gray);
+    color: var(--color-text-secondary);
+}
 
+.grid-footer{
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    max-width: 1300px;
+    width: 95%;
+    padding-bottom: 120px;
+}
 
+.grid-footer h3{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    text-transform: uppercase;
+}
+
+.grid-footer p{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.caption{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    padding-bottom: 40px;
+}
+
+.contact{
+    padding-bottom: 120px;
+}
+
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cv{
+    display: flex;
+}
+.tarea{
+    display: none;
+}
+
+.presentation-about{
+    height: auto;
+}
+.presentation-about h1{
+    padding-top: 30px;
+}
