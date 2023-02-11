@@ -4,7 +4,7 @@
     --noventadegrees:'1.5deg';
     --color-background: #000;
     --color-text-primary: #FFF;
-    --color-text-secondary: #C4C4C4;
+    --color-text-secondary: #e4e4e4;
     --color-gray: #0F0E0E;
     --color-dark-gray: #080808;
     --scale: 3; 
@@ -483,7 +483,7 @@ footer{
     font-size: 16px;
     line-height: 1.5;
     color: var(--color-text-secondary);
-    max-width: 700px;
+    max-width: 600px;
 }
 
 #cv{
@@ -503,6 +503,16 @@ footer{
 .arrow a img{
     object-fit: contain;
 }
+.arrow a{
+    position: fixed;
+    right: 100px;
+}
+
+.width-85{
+    width: 85%;
+    padding: 0 0 80px;
+    border-bottom: none ;
+}
 @media screen and (max-width: 1050px) {
     .sub-title{
       font-size: 50px;
@@ -521,6 +531,10 @@ footer{
     .arrow a{
         height: 50px;
         width: 50px;
+        right: 50px;
+    }
+    .description p,ul li {
+        max-width: 450px;
     }
     
   }
@@ -548,7 +562,21 @@ footer{
     .arrow a{
         height: 30px;
         width: 30px;
+        right: 50px;
     }
-      
+    .description p,ul li {
+        max-width: 300px;
+    }
+    .navigation{
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+    .navigation div{
+        gap: 10px;
+    }
+    .presentation{
+        height: 100%;
+    }
 }
   
