@@ -580,10 +580,26 @@ footer{
 .p-cargo2 {background-image: url('/img/Preimpreso.jpg'); height: 550px;}
 .p-about {background-image: url('/img/dibujo01.jpg'); height: 550px;}
 .p-about2 {background-image: url('/img/pintura.jpg'); height: 550px;}
+.p-banru {background-image: url('/img/banrural02.png'); height: 550px;}
 .p-wild {background-image: url('/img/wildbrews.png');}
+.p-banco{ background-image: url('/img/Blog.png');}
+.p-arch{ background-image: url('/img/arqui07.png');}
 
 .pdf{
     display: flex;
+    gap: 30px;
+}
+.pdf button{
+    border-radius: 50px;
+    padding: 0 30px;
+    border: 4px solid;
+    background-color: var(--color-gray);
+    color: var(--color-text-primary);
+    font-size: 12px;
+}
+.pdf:hover button:hover{
+    background-color: var(--color-background); 
+    cursor: pointer;
 }
 .content {
     position: relative;
@@ -591,6 +607,25 @@ footer{
     top: 50%;
     transform: translateY(-50%);
     text-align: center;
+}
+
+.a-normal{
+    text-decoration: none;
+    color: var(--color-text-primary);
+}
+.a-normal:hover{
+    text-decoration: none;
+    color: var(--color-text-secondary);
+}
+
+.img-landing{
+    width: 100%;
+    height: 600px;
+    overflow: scroll;
+}
+
+.img-landing img{
+    width: 100%;
 }
 @media screen and (max-width: 1050px) {
     .sub-title{
