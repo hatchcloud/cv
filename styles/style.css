@@ -627,6 +627,11 @@ footer{
 .img-landing img{
     width: 100%;
 }
+
+.demo{
+    padding: 20px 0;
+    font-size: 14px
+}
 @media screen and (max-width: 1050px) {
     .sub-title{
       font-size: 50px;
