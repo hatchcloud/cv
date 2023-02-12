@@ -17,11 +17,27 @@ html{
     scroll-behavior: smooth;
 }
 
+/* width, height, and background color for the scrollbar track */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background: var(--color-text-secondary);
+  }
+  
+  /* color, width, and background color for the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+    width: 10px;
+    height: 10px;
+    background: linear-gradient(180deg, #EF32D9 0%, #008C8A 100%);
+    border-radius: 10px;
+}
+
+
 body{
     font-weight: 400;
     color: var(--color-text-primary);
     background: var(--color-background);
-    font-size: 1.4rem;
+    font-size: 14px;
     line-height: 1.5;
     display: flex;
     flex-direction: column;
@@ -252,6 +268,12 @@ body{
     height: 100%;
 }
 
+.c-project a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
 .info-project{
     z-index: 2;
     position: relative;
@@ -380,17 +402,21 @@ footer{
 .color-blue {
     color: var(--color-accent);
 }
+
+.pb-20 {
+    padding-bottom: 20px !important;
+}
 .mt-10 {
-    margin-top: 1rem;
+    margin-top: 10px;
 }
 .mt-40 {
-    margin-top: 4rem;
+    margin-top: 40px;
 }
 .mt-80 {
-    margin-top: 8rem;
+    margin-top: 80px;
 }
 .mb-120 {
-    margin-bottom: 100rem;
+    margin-bottom: 100px;
 }
 .p-absolute{
     position: absolute;
@@ -508,10 +534,58 @@ footer{
     right: 100px;
 }
 
+.fija{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.fija h2{
+    margin: 0 !important;
+}
+
+.fija a img{
+    object-fit: contain;
+}
+.fija a{
+    right: 100px;
+}
+
 .width-85{
     width: 85%;
     padding: 0 0 80px;
     border-bottom: none ;
+}
+
+.color a{
+    background-color: #1d1d1d;
+    padding: 10px;
+    border-radius: 40px;
+    width: 50px;
+    right: 50px;
+}
+
+
+.parallax {
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.p-open {background-image: url('/img/smartmock.png'); height: 700px;}
+.p-cargo {background-image: url('/img/cargo-portada.png'); height: 550px;}
+.p-cargo2 {background-image: url('/img/Preimpreso.jpg'); height: 550px;}
+.p-wild {background-image: url('/img/wildbrews.png');}
+  
+  .content {
+    position: relative;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
 }
 @media screen and (max-width: 1050px) {
     .sub-title{
@@ -535,6 +609,9 @@ footer{
     }
     .description p,ul li {
         max-width: 450px;
+    }
+    .parallax {
+        height: 300px;
     }
     
   }
@@ -563,6 +640,7 @@ footer{
         height: 30px;
         width: 30px;
         right: 50px;
+        display: none;
     }
     .description p,ul li {
         max-width: 300px;
@@ -573,10 +651,21 @@ footer{
         gap: 10px;
     }
     .navigation div{
-        gap: 10px;
+        gap: 5px;
+    }
+    .navigation div a{
+        font-size: 12px;
+        
     }
     .presentation{
         height: 100%;
     }
+    .width-85 {
+        width: 100%;
+    }
+    .mt-80{
+        margin-top: 40px;
+    }
+
 }
   
