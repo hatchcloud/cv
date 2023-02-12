@@ -578,8 +578,8 @@ footer{
 .p-open {background-image: url('../img/smartmock.png'); height: 700px;}
 .p-cargo {background-image: url('../img/cargo-portada.png'); height: 550px;}
 .p-cargo2 {background-image: url('../img/Preimpreso.jpg'); height: 550px;}
-.p-about {background-image: url('./img/dibujo01.jpg'); height: 550px;}
-.p-about2 {background-image: url('./img/pintura.jpg'); height: 550px;}
+.p-about {background-image: url('../img/dibujo01.jpg'); height: 550px;}
+.p-about2 {background-image: url('../img/pintura.jpg'); height: 550px;}
 .p-banru {background-image: url('../img/banrural02.png'); height: 550px;}
 .p-wild {background-image: url('../img/wildbrews.png');}
 .p-banco{ background-image: url('../img/Blog.png');}
