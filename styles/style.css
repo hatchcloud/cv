@@ -732,4 +732,9 @@ footer{
     }
 
 }
-  
+
+
+.main-logo{
+    text-decoration: none;
+    color: var(--color-text-primary);
+}
