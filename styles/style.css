@@ -656,6 +656,10 @@ footer{
     width: 100%;
 }
 
+.img-landing-2 picture{
+    width: 100%;
+}
+
 .demo{
     padding: 20px 0;
     font-size: 14px
