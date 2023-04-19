@@ -2,11 +2,11 @@
     --background-animation: #000;
     --background-icon: rgb(255, 230, 0);
     --noventadegrees:'1.5deg';
-    --color-background: #000;
-    --color-text-primary: #FFF;
+    --color-background: #252525;
+    --color-text-primary: #f3f1f1;
     --color-text-secondary: #e4e4e4;
     --color-gray: #0F0E0E;
-    --color-dark-gray: #080808;
+    --color-dark-gray: #1a1919;
     --scale: 3; 
     --animate-duration: 1500ms;
     --gap-botton: 120px
@@ -433,7 +433,13 @@ footer{
 .p-fixed{
     position: fixed;
 }
+.flex{
+    display: flex;
+}
 
+.flex-center{
+    justify-content: center;
+}
 
 .about-me p span{
     font-weight: 500;
@@ -575,7 +581,9 @@ footer{
     width: 50px;
     right: 50px;
 }
-
+.gif{
+    max-width: 600px;
+}
 
 .parallax {
     height: 500px;
@@ -585,6 +593,7 @@ footer{
     background-size: cover;
 }
 .p-open {background-image: url('../img/smartmock.png'); height: 700px;}
+.p-jobs {background-image: url('../img/qjob/3.png'); height: 700px;}
 .p-cargo {background-image: url('../img/cargo-portada.png'); height: 550px;}
 .p-cargo2 {background-image: url('../img/Preimpreso.jpg'); height: 550px;}
 .p-about {background-image: url('../img/dibujo01.jpg'); height: 550px;}
